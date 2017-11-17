@@ -1,0 +1,69 @@
+
+.Titolo-home {
+  font-family: 'SourceSansPro', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: $sfondo-menu;
+}
+
+.titoli-pagine {
+  font-family: 'SourceSansPro', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: $sfondo-menu;
+}
+
+.Testi-pagine {
+  font-family: 'SourceSansPro-Light', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: $testi-pagine;
+}
+
+.testo-footer {
+  font-family: 'SourceSansPro-SemiBoldItalic', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.43;
+  text-align: center;
+  color: $sfondo-menu;
+}
+
+.Testi-menu {
+  font-family: 'SourceSansPro-SemiBold', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2.29;
+  text-align: left;
+  color: $white;
+}
+
+.testo-cerca-e-allegati {
+  font-family: 'SourceSansPro-Light', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: $sfondo-menu;
+}
+
+.breadcrumb {
+  font-family: 'SourceSansPro', sans-serif !important;
+  font-size: 13.2px !important;
+  letter-spacing: 0.6px !important;
+  color: $sfondo-menu !important;
+}
+
+.breadcrumb-attuale {
+  font-family: 'SourceSansPro', sans-serif;
+  font-size: 13.2px;
+  letter-spacing: 0.6px;
+  color: $breadcrumb-attuale;
+}

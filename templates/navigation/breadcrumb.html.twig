@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{% if breadcrumb %}
+  <nav class="breadcrumb-container flex-container content-center full-space" role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    {% for item in breadcrumb %}
+      <div class="black-text flex-container">
+        {% if item.url %}
+          {% if item.text == "Home"%}
+            <a href="{{ item.url }}"><img style="height:18px;width:18px;margin-right:5px;margin-top:-1px;" src="/themes/Trasparenza/images/home.png" ></a>
+          {% endif %}
+          {% if item.text != "Node" and item.text != "Home"%}
+          <img style="width:7px;margin-right:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><a class="breadcrumb" href="{{ item.url }}">{{ item.text }}</a>
+          {% endif %}
+        {% else %}
+          {% if item.text != ""%}
+            <img style="width:7px;margin-right:5px;margin-left:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><span class="breadcrumb-attuale" >{{ item.text }}</span>
+          {% else %}
+            <a href="/"><img style="height:18px;width:18px;margin-right:5px;margin-top:-1px;" src="/themes/Trasparenza/images/home.png" ></a>
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </nav>
+{% endif %}
